@@ -1,2 +1,4 @@
-# This is a repo for the gcp devops proj
-### Changing in the file to test the branch protection rule
+# Docker Flask Application
+
+- This application is written in Python. 
+- It shall be deployed on GKE
