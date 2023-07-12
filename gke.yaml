@@ -25,13 +25,11 @@ kind: "Service"
 metadata:
   name: "gcp-devops-gke-service"
   namespace: "gcp-devops-prod"
-  lables:
-    app.kubernetes.io/managed-by: "gcp-cloud-build-deploy"
 spec:
+  selector: 
+    app.kubernetes.io/name: "gcp-cloud-build-deploy"
   ports:
   - protocol: "TCP"
     port: 80
     targetPort: 5000
-  selector: 
-    app: "gcp"
   type: "LoadBalancer"
